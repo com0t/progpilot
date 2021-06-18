@@ -1,0 +1,27 @@
+{
+    "name": "designsecurity/progpilot",
+    "description": "A Static Analyser for security",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eric Therond",
+            "email": "eric.therond.fr@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "ircmaxell/php-cfg": "1.0.x-dev",
+        "symfony/yaml": ">=3.3.6",
+        "symfony/console": ">=3.3.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "phpro/grumphp": "^1.3"
+    },
+    "bin": ["projects/phar/progpilot"],
+    "autoload": {
+        "psr-0": {
+            "progpilot": "package/src"
+        }
+    }
+}

@@ -1,0 +1,637 @@
+[
+    {
+        "source_name": [
+            "$id_return"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            53
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$s",
+                    "flow_line": 3,
+                    "flow_column": 46,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+                },
+                {
+                    "flow_name": "$_GET[\"f\"]",
+                    "flow_line": 8,
+                    "flow_column": 78,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 8,
+        "sink_column": 78,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php",
+        "vuln_name": "file_disclosure",
+        "vuln_cwe": "CWE_200",
+        "vuln_id": "28efe33d635b80a95075ca292f693be6b9747e8e9452e7896185a565151b0f4b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$return_basename"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            197
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$basename_param0_line11_column197_progpilot",
+                    "flow_line": 11,
+                    "flow_column": 197,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+                },
+                {
+                    "flow_name": "$_GET[\"f\"]",
+                    "flow_line": 11,
+                    "flow_column": 197,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 11,
+        "sink_column": 197,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php",
+        "vuln_name": "file_disclosure",
+        "vuln_cwe": "CWE_200",
+        "vuln_id": "849b757c8f469e4f577937c80b84445f61adf7264c980b7aadd35fc6822ad427",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"f\"]"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            271
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "file_get_contents",
+        "sink_line": 14,
+        "sink_column": 271,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php",
+        "vuln_name": "file_disclosure",
+        "vuln_cwe": "CWE_200",
+        "vuln_id": "f3c508cc207b7e381c0da29be4b504e98a807188764321486671bf9a86fd4892",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$b"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            197
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$file_get_contents_return",
+                    "flow_line": 11,
+                    "flow_column": 197,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "print_r",
+        "sink_line": 17,
+        "sink_column": 335,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "74f258fa247b07c537dda979b7264f436340e31c567cce568bd83ca3e8619d8d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$c"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            271
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$file_get_contents_return",
+                    "flow_line": 14,
+                    "flow_column": 271,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 20,
+        "sink_column": 365,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/0\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "d9a3b597c8459ff4fc8d9ed626338ca669e0ff64a7ba32cb23ef57c85bfcd926",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$s"
+        ],
+        "source_line": [
+            23
+        ],
+        "source_column": [
+            211
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$g_return",
+                    "flow_line": 8,
+                    "flow_column": 96,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php"
+                },
+                {
+                    "flow_name": "$x",
+                    "flow_line": 7,
+                    "flow_column": 89,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php"
+                },
+                {
+                    "flow_name": "$h_return",
+                    "flow_line": 12,
+                    "flow_column": 126,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php"
+                },
+                {
+                    "flow_name": "$_GET[\"a\"]",
+                    "flow_line": 12,
+                    "flow_column": 126,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 26,
+        "sink_column": 241,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "faf562ac9690db7d0e3c876250722d374207b8c10c4db0359f5db255acfb68a3",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$a"
+        ],
+        "source_line": [
+            32
+        ],
+        "source_column": [
+            277
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$_GET[\"a\"]",
+                    "flow_line": 32,
+                    "flow_column": 277,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 38,
+        "sink_column": 339,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/1\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "4fcc100560b325db328d63537aa9190ec8063c112d1a3ab4332b5f4c05eb1f39",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"id\"]"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            68
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/14\/index.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "query",
+        "sink_line": 5,
+        "sink_column": 68,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/14\/index.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "b1ef99a8f2c0da41d4427f9df80798e17476e062eb68b78393e0c803be5603a7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"a\"]"
+        ],
+        "source_line": [
+            7
+        ],
+        "source_column": [
+            98
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/15\/index.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "printf",
+        "sink_line": 7,
+        "sink_column": 98,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/15\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "c465fcd6b4647818cb0be54138971da1dbaf306675c87f961ae620655ce79873",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$path"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            90
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$get_return",
+                    "flow_line": 4,
+                    "flow_column": 52,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php"
+                },
+                {
+                    "flow_name": "$_GET[\"a\"]",
+                    "flow_line": 4,
+                    "flow_column": 52,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 8,
+        "sink_column": 90,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "978b67184224435cf17b2b8901159d3ecedae976ba877da0817b79ea9977a98b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$path"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            90
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$get_return",
+                    "flow_line": 4,
+                    "flow_column": 52,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php"
+                },
+                {
+                    "flow_name": "$_GET[\"a\"]",
+                    "flow_line": 4,
+                    "flow_column": 52,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 11,
+        "sink_column": 122,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "14cf7706bc161d9f70707026b689f7d9961a68ee9b14ce4e610595e6bdcd2440",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$shell_exec_return"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            122
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "echo",
+        "sink_line": 11,
+        "sink_column": 122,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/2\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "14950c4d3f62b3b6e76ea4652a33eb7d03135267be613cfc40146c592e3141b1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"user\"]",
+            "$_GET[\"password\"]"
+        ],
+        "source_line": [
+            6,
+            6
+        ],
+        "source_column": [
+            112,
+            112
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/4\/file.php",
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/4\/file.php"
+        ],
+        "tainted_flow": [
+            [],
+            []
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 6,
+        "sink_column": 112,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/4\/file.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "c843f6ae5b91b17f3a71323a3d577abd622c449dbbc549216a4a6cca8dbfd9cb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"file\"]"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            179
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/4\/index.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "include",
+        "sink_line": 10,
+        "sink_column": 179,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/4\/index.php",
+        "vuln_name": "file_inclusion",
+        "vuln_cwe": "CWE_98",
+        "vuln_id": "c278e9fa15cc6458125f0df9c0a1f1ab91d51a3d5e473bed3480b8e6b0713835",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$user[\"email\"]"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            296
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/4\/index.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "echo",
+        "sink_line": 15,
+        "sink_column": 296,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/4\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9cfa2dc54e50fb968e53bbcde87cbbb3c59ba7775d40557eaaa8e14532d4383c",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_GET[\"file\"]"
+        ],
+        "source_line": [
+            10
+        ],
+        "source_column": [
+            159
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/5\/index.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "include",
+        "sink_line": 10,
+        "sink_column": 159,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/5\/index.php",
+        "vuln_name": "file_inclusion",
+        "vuln_cwe": "CWE_98",
+        "vuln_id": "9d9a17684364ddcb296dfd28d9da8da4b39b388783ba87bcd6816bfe5fc6c658",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$b"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            51
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_basename",
+                    "flow_line": 4,
+                    "flow_column": 51,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+                },
+                {
+                    "flow_name": "$basename_param0_line4_column51_progpilot",
+                    "flow_line": 4,
+                    "flow_column": 51,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+                },
+                {
+                    "flow_name": "$a",
+                    "flow_line": 3,
+                    "flow_column": 34,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+                },
+                {
+                    "flow_name": "$_GET[\"a\"]",
+                    "flow_line": 3,
+                    "flow_column": 34,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "include",
+        "sink_line": 6,
+        "sink_column": 71,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php",
+        "vuln_name": "file_inclusion",
+        "vuln_cwe": "CWE_98",
+        "vuln_id": "51bd3a407ac908a43a67749c1995c6dabc4c3565f108f7b546e3586c4caf4fea",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$b"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            51
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_basename",
+                    "flow_line": 4,
+                    "flow_column": 51,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+                },
+                {
+                    "flow_name": "$basename_param0_line4_column51_progpilot",
+                    "flow_line": 4,
+                    "flow_column": 51,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+                },
+                {
+                    "flow_name": "$a",
+                    "flow_line": 3,
+                    "flow_column": 34,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+                },
+                {
+                    "flow_name": "$_GET[\"a\"]",
+                    "flow_line": 3,
+                    "flow_column": 34,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 9,
+        "sink_column": 111,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/6\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "b69dcc85d4937f30090c45ceab5945ccd94005a0050286353152177b2135b9d1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$param"
+        ],
+        "source_line": [
+            11
+        ],
+        "source_column": [
+            101
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/phpwander\/7\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$items[1]",
+                    "flow_line": 3,
+                    "flow_column": 34,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/7\/index.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 12,
+        "sink_column": 136,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/phpwander\/7\/index.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "cacd457a6ed43aa0f131b7d29f483dce4ae041f2d8a337aaa7459f89b0c44cf1",
+        "vuln_type": "taint-style"
+    }
+]

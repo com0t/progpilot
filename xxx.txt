@@ -1,0 +1,306 @@
+
+
+
+		|--------------------------|
+		|                          |
+		|     START ANALYZE        |
+		|                          |
+		|--------------------------|
+ENTER_FUNCTION
+ENTER_BLOCK
+TEMPORARY
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+FUNC_CALL
+-->string(4) "exec"
+	--> funcCall()
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+			+ Break
+object(progpilot\Objects\MyDefinition)#1575 (32) {
+  ["isCopyArray":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["objectId":"progpilot\Objects\MyDefinition":private]=>
+  int(-1)
+  ["blockId":"progpilot\Objects\MyDefinition":private]=>
+  string(64) "f5acc0a5c9393d02b539cbdd4cdd969a0b56d3e49ed92450978e267b307ef061"
+  ["isTainted":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["isConst":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["isRef":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["refName":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["isRefArr":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["refArrValue":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["theArrays":"progpilot\Objects\MyDefinition":private]=>
+  array(0) {
+  }
+  ["theExpr":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["theExprs":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["taintedByExpr":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["instance":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["className":"progpilot\Objects\MyDefinition":private]=>
+  string(0) ""
+  ["isSanitized":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["typeSanitized":"progpilot\Objects\MyDefinition":private]=>
+  array(0) {
+  }
+  ["valueFromDef":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["cast":"progpilot\Objects\MyDefinition":private]=>
+  string(11) "cast_string"
+  ["isProperty":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["isInstance":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["isEmbeddedByChar":"progpilot\Objects\MyDefinition":private]=>
+  array(3) {
+    ["'"]=>
+    bool(false)
+    ["<"]=>
+    bool(false)
+    [">"]=>
+    bool(false)
+  }
+  ["label":"progpilot\Objects\MyDefinition":private]=>
+  int(2)
+  ["property"]=>
+  object(progpilot\Objects\MyProperty)#1576 (9) {
+    ["visibility":"progpilot\Objects\MyProperty":private]=>
+    string(6) "public"
+    ["properties":"progpilot\Objects\MyProperty":private]=>
+    array(0) {
+    }
+    ["varId":protected]=>
+    int(8)
+    ["varName":"progpilot\Objects\MyOp":private]=>
+    string(0) ""
+    ["varLine":"progpilot\Objects\MyOp":private]=>
+    int(0)
+    ["varColumn":"progpilot\Objects\MyOp":private]=>
+    int(0)
+    ["sourceMyFile":"progpilot\Objects\MyOp":private]=>
+    NULL
+    ["arrayValue":"progpilot\Objects\MyOp":private]=>
+    bool(false)
+    ["flags":"progpilot\Objects\MyOp":private]=>
+    int(0)
+  }
+  ["varId":protected]=>
+  int(7)
+  ["varName":"progpilot\Objects\MyOp":private]=>
+  string(36) "exec_param0_line5_column87_progpilot"
+  ["varLine":"progpilot\Objects\MyOp":private]=>
+  int(5)
+  ["varColumn":"progpilot\Objects\MyOp":private]=>
+  int(87)
+  ["sourceMyFile":"progpilot\Objects\MyOp":private]=>
+  object(progpilot\Objects\MyFile)#1786 (8) {
+    ["includedFromMyFile":"progpilot\Objects\MyFile":private]=>
+    NULL
+    ["varId":protected]=>
+    NULL
+    ["varName":"progpilot\Objects\MyOp":private]=>
+    string(8) "../x.php"
+    ["varLine":"progpilot\Objects\MyOp":private]=>
+    int(0)
+    ["varColumn":"progpilot\Objects\MyOp":private]=>
+    int(0)
+    ["sourceMyFile":"progpilot\Objects\MyOp":private]=>
+    NULL
+    ["arrayValue":"progpilot\Objects\MyOp":private]=>
+    bool(false)
+    ["flags":"progpilot\Objects\MyOp":private]=>
+    int(0)
+  }
+  ["arrayValue":"progpilot\Objects\MyOp":private]=>
+  bool(false)
+  ["flags":"progpilot\Objects\MyOp":private]=>
+  int(0)
+  ["lastKnownValue"]=>
+  array(0) {
+  }
+}
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+			+ Break
+object(progpilot\Objects\MyDefinition)#1575 (32) {
+  ["isCopyArray":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["objectId":"progpilot\Objects\MyDefinition":private]=>
+  int(-1)
+  ["blockId":"progpilot\Objects\MyDefinition":private]=>
+  string(64) "f5acc0a5c9393d02b539cbdd4cdd969a0b56d3e49ed92450978e267b307ef061"
+  ["isTainted":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["isConst":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["isRef":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["refName":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["isRefArr":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["refArrValue":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["theArrays":"progpilot\Objects\MyDefinition":private]=>
+  array(0) {
+  }
+  ["theExpr":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["theExprs":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["taintedByExpr":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["instance":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["className":"progpilot\Objects\MyDefinition":private]=>
+  string(0) ""
+  ["isSanitized":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["typeSanitized":"progpilot\Objects\MyDefinition":private]=>
+  array(0) {
+  }
+  ["valueFromDef":"progpilot\Objects\MyDefinition":private]=>
+  NULL
+  ["cast":"progpilot\Objects\MyDefinition":private]=>
+  string(11) "cast_string"
+  ["isProperty":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["isInstance":"progpilot\Objects\MyDefinition":private]=>
+  bool(false)
+  ["isEmbeddedByChar":"progpilot\Objects\MyDefinition":private]=>
+  array(3) {
+    ["'"]=>
+    bool(false)
+    ["<"]=>
+    bool(false)
+    [">"]=>
+    bool(false)
+  }
+  ["label":"progpilot\Objects\MyDefinition":private]=>
+  int(2)
+  ["property"]=>
+  object(progpilot\Objects\MyProperty)#1576 (9) {
+    ["visibility":"progpilot\Objects\MyProperty":private]=>
+    string(6) "public"
+    ["properties":"progpilot\Objects\MyProperty":private]=>
+    array(0) {
+    }
+    ["varId":protected]=>
+    int(8)
+    ["varName":"progpilot\Objects\MyOp":private]=>
+    string(0) ""
+    ["varLine":"progpilot\Objects\MyOp":private]=>
+    int(0)
+    ["varColumn":"progpilot\Objects\MyOp":private]=>
+    int(0)
+    ["sourceMyFile":"progpilot\Objects\MyOp":private]=>
+    NULL
+    ["arrayValue":"progpilot\Objects\MyOp":private]=>
+    bool(false)
+    ["flags":"progpilot\Objects\MyOp":private]=>
+    int(0)
+  }
+  ["varId":protected]=>
+  int(7)
+  ["varName":"progpilot\Objects\MyOp":private]=>
+  string(36) "exec_param0_line5_column87_progpilot"
+  ["varLine":"progpilot\Objects\MyOp":private]=>
+  int(5)
+  ["varColumn":"progpilot\Objects\MyOp":private]=>
+  int(87)
+  ["sourceMyFile":"progpilot\Objects\MyOp":private]=>
+  object(progpilot\Objects\MyFile)#1786 (8) {
+    ["includedFromMyFile":"progpilot\Objects\MyFile":private]=>
+    NULL
+    ["varId":protected]=>
+    NULL
+    ["varName":"progpilot\Objects\MyOp":private]=>
+    string(8) "../x.php"
+    ["varLine":"progpilot\Objects\MyOp":private]=>
+    int(0)
+    ["varColumn":"progpilot\Objects\MyOp":private]=>
+    int(0)
+    ["sourceMyFile":"progpilot\Objects\MyOp":private]=>
+    NULL
+    ["arrayValue":"progpilot\Objects\MyOp":private]=>
+    bool(false)
+    ["flags":"progpilot\Objects\MyOp":private]=>
+    int(0)
+  }
+  ["arrayValue":"progpilot\Objects\MyOp":private]=>
+  bool(false)
+  ["flags":"progpilot\Objects\MyOp":private]=>
+  int(0)
+  ["lastKnownValue"]=>
+  array(0) {
+  }
+}
+END_EXPRESSION
+DEFINITION
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+FUNC_CALL
+-->string(4) "echo"
+	--> funcCall()
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+END_EXPRESSION
+END_EXPRESSION
+DEFINITION
+LEAVE_BLOCK
+LEAVE_FUNCTION
+[
+    {
+        "source_name": [
+            "$a"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            87
+        ],
+        "source_file": [
+            "..\/x.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$exec_return",
+                    "flow_line": 5,
+                    "flow_column": 87,
+                    "flow_file": "..\/x.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 7,
+        "sink_column": 160,
+        "sink_file": "..\/x.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9eab018994805849a21302177c9aa83bfa51be3977c3e25753835a021ed6fd8e",
+        "vuln_type": "taint-style"
+    }
+]

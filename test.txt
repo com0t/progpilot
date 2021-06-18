@@ -1,0 +1,128 @@
+
+
+
+		|--------------------------|
+		|                          |
+		|     START ANALYZE        |
+		|                          |
+		|--------------------------|
+ENTER_FUNCTION
+ENTER_BLOCK
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+FUNC_CALL
+-->string(17) "file_get_contents"
+	--> funcCall()
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+			+ Break
+array(1) {
+  [0]=>
+  string(9) "file_name"
+}
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+			+ Break
+array(1) {
+  [0]=>
+  string(9) "file_name"
+}
+END_EXPRESSION
+DEFINITION
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+FUNC_CALL
+-->string(17) "file_get_contents"
+	--> funcCall()
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+			+ Break
+array(1) {
+  [0]=>
+  string(1) "x"
+}
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+			+ Break
+array(1) {
+  [0]=>
+  string(1) "x"
+}
+END_EXPRESSION
+DEFINITION
+TEMPORARY
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+FUNC_CALL
+-->string(4) "exec"
+	--> funcCall()
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+			+ Break
+array(0) {
+}
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+			+ Break
+array(0) {
+}
+END_EXPRESSION
+DEFINITION
+TEMPORARY
+END_EXPRESSION
+DEFINITION
+FUNC_CALL
+-->string(4) "echo"
+	--> funcCall()
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+		--> funccallSpecifyAnalysis
+		--> funccallSource
+END_EXPRESSION
+END_EXPRESSION
+DEFINITION
+LEAVE_BLOCK
+LEAVE_FUNCTION
+[
+    {
+        "source_name": [
+            "$a"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            85
+        ],
+        "source_file": [
+            "..\/x.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$exec_return",
+                    "flow_line": 5,
+                    "flow_column": 85,
+                    "flow_file": "..\/x.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 7,
+        "sink_column": 158,
+        "sink_file": "..\/x.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "9eab018994805849a21302177c9aa83bfa51be3977c3e25753835a021ed6fd8e",
+        "vuln_type": "taint-style"
+    }
+]

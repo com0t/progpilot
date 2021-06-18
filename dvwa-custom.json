@@ -1,0 +1,1890 @@
+[
+    {
+        "source_name": [
+            "$pLocation"
+        ],
+        "source_line": [
+            493
+        ],
+        "source_column": [
+            15073
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$_SERVER[\"PHP_SELF\"]",
+                    "flow_line": 112,
+                    "flow_column": 2543,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php"
+                }
+            ]
+        ],
+        "sink_name": "header",
+        "sink_line": 495,
+        "sink_column": 15110,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "header_injection",
+        "vuln_cwe": "CWE_601",
+        "vuln_id": "a3d5b7e3ec84e11bf9614d2e473c2baaf157ad061434a66d20b834baa411e316",
+        "vuln_type": "taint-style"
+    },
+    {
+        "vuln_rule": "MUST_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 147,
+        "vuln_column": 3382,
+        "vuln_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_description": "cookie set without secure flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "d688056b7db3f6c935ba31fb67fff4fbbe3b6aa1acf550d4cb235e55380390ae",
+        "vuln_type": "custom"
+    },
+    {
+        "vuln_rule": "MUST_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 148,
+        "vuln_column": 3461,
+        "vuln_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_description": "cookie set without secure flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "2c563a074f90388371556138f4fd3423edab6bc49a6119eebe0ee14c148dbdd1",
+        "vuln_type": "custom"
+    },
+    {
+        "source_name": [
+            "$insert"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            2505
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/DBMS\/MySQL.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$avatarUrl",
+                    "flow_line": 52,
+                    "flow_column": 2457,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/DBMS\/MySQL.php"
+                },
+                {
+                    "flow_name": "$base_dir",
+                    "flow_line": 51,
+                    "flow_column": 2389,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/DBMS\/MySQL.php"
+                },
+                {
+                    "flow_name": "$return_str_replace",
+                    "flow_line": 51,
+                    "flow_column": 2389,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/DBMS\/MySQL.php"
+                },
+                {
+                    "flow_name": "$str_replace_param2_line51_column2389_progpilot",
+                    "flow_line": 51,
+                    "flow_column": 2389,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/DBMS\/MySQL.php"
+                },
+                {
+                    "flow_name": "$_SERVER[\"SCRIPT_NAME\"]",
+                    "flow_line": 51,
+                    "flow_column": 2389,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/DBMS\/MySQL.php"
+                }
+            ]
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 60,
+        "sink_column": 2971,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/DBMS\/MySQL.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "600d95d89d533bca45cfe5b18d9acb8b0cb80006ad2e4fe45b34e176e873d4c7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            169
+        ],
+        "source_column": [
+            4549
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/Caching\/File.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "unserialize",
+        "sink_line": 169,
+        "sink_column": 4549,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/Caching\/File.php",
+        "vuln_name": "code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "6a18c9176bc11eac66acbf369b9d90531498253b9dd12edefbb10aff81ed5c73",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file"
+        ],
+        "source_line": [
+            220
+        ],
+        "source_column": [
+            6004
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/Log\/Email.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$files",
+                    "flow_line": 219,
+                    "flow_column": 5963,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/Log\/Email.php"
+                },
+                {
+                    "flow_name": "$scandir_return",
+                    "flow_line": 219,
+                    "flow_column": 5963,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/Log\/Email.php"
+                }
+            ]
+        ],
+        "sink_name": "unlink",
+        "sink_line": 227,
+        "sink_column": 6318,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/Log\/Email.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "94467b256c03966fac675164aa9f634af7527f787f1dacc6c09eecbec725aa93",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file"
+        ],
+        "source_line": [
+            249
+        ],
+        "source_column": [
+            6880
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/Log\/Email.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "unlink",
+        "sink_line": 252,
+        "sink_column": 7025,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/Log\/Email.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "10913f890280a319cd31812cc78930c84df61744cf64b4c273372ac00f7d7b76",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$k"
+        ],
+        "source_line": [
+            167
+        ],
+        "source_column": [
+            6044
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/ConfigSchema\/InterchangeBuilder.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$hash",
+                    "flow_line": 165,
+                    "flow_column": 5983,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/ConfigSchema\/InterchangeBuilder.php"
+                },
+                {
+                    "flow_name": "$hash",
+                    "flow_line": 50,
+                    "flow_column": 1655,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/ConfigSchema\/InterchangeBuilder.php"
+                }
+            ]
+        ],
+        "sink_name": "trigger_error",
+        "sink_line": 169,
+        "sink_column": 6133,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/ConfigSchema\/InterchangeBuilder.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "51f8ec8d0ce94e31e43e4c6223b1c4f2c2d3dd82f977ef8220a67f85a60e8a0d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            54
+        ],
+        "source_column": [
+            1901
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/ConfigSchema.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "unserialize",
+        "sink_line": 54,
+        "sink_column": 1901,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/ConfigSchema.php",
+        "vuln_name": "code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "da7dd275ffffbaf6b7bb24785213e0f03c79a2695be46a128ed784fa6698f49b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            33
+        ],
+        "source_column": [
+            1152
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/DefinitionCache\/Serializer.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "unserialize",
+        "sink_line": 33,
+        "sink_column": 1152,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/DefinitionCache\/Serializer.php",
+        "vuln_name": "code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "35e7558470bee4213e1a1aac50804d6b6f49f46938641404af947e4a35499239",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$filename"
+        ],
+        "source_line": [
+            46
+        ],
+        "source_column": [
+            1601
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/DefinitionCache\/Serializer.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$readdir_return",
+                    "flow_line": 46,
+                    "flow_column": 1601,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/DefinitionCache\/Serializer.php"
+                }
+            ]
+        ],
+        "sink_name": "unlink",
+        "sink_line": 49,
+        "sink_column": 1737,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/DefinitionCache\/Serializer.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "851caa1b1a53963ed414b0f47cae2e4a31db09dbf675ef38a659b81271a69f8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$filename"
+        ],
+        "source_line": [
+            57
+        ],
+        "source_column": [
+            2003
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/DefinitionCache\/Serializer.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$readdir_return",
+                    "flow_line": 57,
+                    "flow_column": 2003,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/DefinitionCache\/Serializer.php"
+                }
+            ]
+        ],
+        "sink_name": "unlink",
+        "sink_line": 61,
+        "sink_column": 2237,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/DefinitionCache\/Serializer.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "851caa1b1a53963ed414b0f47cae2e4a31db09dbf675ef38a659b81271a69f8b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            23
+        ],
+        "source_column": [
+            719
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/EntityLookup.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "unserialize",
+        "sink_line": 23,
+        "sink_column": 719,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/external\/phpids\/0.6\/lib\/IDS\/vendors\/htmlpurifier\/HTMLPurifier\/EntityLookup.php",
+        "vuln_name": "code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "46a174741ea4e35b2a4ddce4c378e9d45628f5129a958025a4b1d735cdc6712d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            55
+        ],
+        "source_column": [
+            2000
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/instructions.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$instructions",
+                    "flow_line": 31,
+                    "flow_column": 1302,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/instructions.php"
+                },
+                {
+                    "flow_name": "$return_text",
+                    "flow_line": 31,
+                    "flow_column": 1302,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/instructions.php"
+                },
+                {
+                    "flow_name": "$text_param0_line31_column1302_progpilot",
+                    "flow_line": 31,
+                    "flow_column": 1302,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/instructions.php"
+                },
+                {
+                    "flow_name": "$instructions",
+                    "flow_line": 27,
+                    "flow_column": 1142,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/instructions.php"
+                },
+                {
+                    "flow_name": "$file_get_contents_return",
+                    "flow_line": 27,
+                    "flow_column": 1142,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/instructions.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 280,
+        "sink_column": 9269,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f2b7e3dac8974f390bc233f17a50108e2ae51653b8742746661dc4aa364a432d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            195
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/source\/low.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$user",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_GET[\"username\"]",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 13,
+        "sink_column": 277,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/source\/low.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "1304cae5113c749ba901fc12cac60c416cc4b5ba9b7ea9cead8fb7a6ac49a8fd",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            53
+        ],
+        "source_column": [
+            1464
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$html",
+                    "flow_line": 22,
+                    "flow_column": 775,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/source\/low.php"
+                },
+                {
+                    "flow_name": "$html",
+                    "flow_line": 21,
+                    "flow_column": 706,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/source\/low.php"
+                },
+                {
+                    "flow_name": "$user",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_GET[\"username\"]",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/brute\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 280,
+        "sink_column": 9269,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "208eca07567eece65658755dfb62075d22f5d0cdefb5aedb4d102589abfa4f34",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            80
+        ],
+        "source_column": [
+            2655
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/captcha\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$html",
+                    "flow_line": 64,
+                    "flow_column": 2371,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/captcha\/source\/low.php"
+                },
+                {
+                    "flow_name": "$html",
+                    "flow_line": 28,
+                    "flow_column": 735,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/captcha\/source\/low.php"
+                },
+                {
+                    "flow_name": "$pass_new",
+                    "flow_line": 8,
+                    "flow_column": 143,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/captcha\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_POST[\"password_new\"]",
+                    "flow_line": 8,
+                    "flow_column": 143,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/captcha\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 280,
+        "sink_column": 9269,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "f1f4df2077c17a7b4e3797f7fe8a36b78403dd8570097ad3f863de8a0907cfd1",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$callback"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            109
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csp\/source\/jsonp.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$_GET[\"callback\"]",
+                    "flow_line": 5,
+                    "flow_column": 109,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csp\/source\/jsonp.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 12,
+        "sink_column": 204,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csp\/source\/jsonp.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "42791d12744ff192bf4d6fa43870063204e02f6453eba52989d3d7d6a2439180",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            35
+        ],
+        "source_column": [
+            1207
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$login_state",
+                    "flow_line": 24,
+                    "flow_column": 899,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                },
+                {
+                    "flow_name": "$user",
+                    "flow_line": 14,
+                    "flow_column": 335,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                },
+                {
+                    "flow_name": "$return_mysqli_real_escape_string",
+                    "flow_line": 14,
+                    "flow_column": 335,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                },
+                {
+                    "flow_name": "$mysqli_real_escape_string_param1_line14_column335_progpilot",
+                    "flow_line": 14,
+                    "flow_column": 335,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                },
+                {
+                    "flow_name": "$user",
+                    "flow_line": 13,
+                    "flow_column": 302,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                },
+                {
+                    "flow_name": "$return_stripslashes",
+                    "flow_line": 13,
+                    "flow_column": 302,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                },
+                {
+                    "flow_name": "$stripslashes_param0_line13_column302_progpilot",
+                    "flow_line": 13,
+                    "flow_column": 302,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                },
+                {
+                    "flow_name": "$user",
+                    "flow_line": 12,
+                    "flow_column": 270,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                },
+                {
+                    "flow_name": "$_POST[\"username\"]",
+                    "flow_line": 12,
+                    "flow_column": 270,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/csrf\/test_credentials.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 386,
+        "sink_column": 11636,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "a1005e0df1bae4bbd53e58098b517459496f0788c5049623f09631c289e7d02b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            63
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$_REQUEST[\"ip\"]",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 10,
+        "sink_column": 211,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "bec1650e6b2b7b01041e1c7d90032077f4d05886b953a550eecc23a2c4f0c57b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            5
+        ],
+        "source_column": [
+            63
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$_REQUEST[\"ip\"]",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 14,
+        "sink_column": 279,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "bec1650e6b2b7b01041e1c7d90032077f4d05886b953a550eecc23a2c4f0c57b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            51
+        ],
+        "source_column": [
+            1326
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$html",
+                    "flow_line": 18,
+                    "flow_column": 364,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php"
+                },
+                {
+                    "flow_name": "$cmd",
+                    "flow_line": 10,
+                    "flow_column": 211,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php"
+                },
+                {
+                    "flow_name": "$shell_exec_return",
+                    "flow_line": 10,
+                    "flow_column": 211,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 280,
+        "sink_column": 9269,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "dade9f0f2fd56438a78d856009b79bd926fd7c81a41d1b720ec81153d78a7c2e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            349
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_str_replace",
+                    "flow_line": 21,
+                    "flow_column": 349,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$str_replace_param2_line21_column349_progpilot",
+                    "flow_line": 21,
+                    "flow_column": 349,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$target",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$return_trim",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$trim_param0_line5_column63_progpilot",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$_REQUEST[\"ip\"]",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                }
+            ]
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 26,
+        "sink_column": 548,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "9b5970581d60ab6609c6a6c4776ea7529f0c3e91ae8f28af225bbbfe2af8dfbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            21
+        ],
+        "source_column": [
+            349
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_str_replace",
+                    "flow_line": 21,
+                    "flow_column": 349,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$str_replace_param2_line21_column349_progpilot",
+                    "flow_line": 21,
+                    "flow_column": 349,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$target",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$return_trim",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$trim_param0_line5_column63_progpilot",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                },
+                {
+                    "flow_name": "$_REQUEST[\"ip\"]",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php"
+                }
+            ]
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 30,
+        "sink_column": 616,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/high.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "9b5970581d60ab6609c6a6c4776ea7529f0c3e91ae8f28af225bbbfe2af8dfbe",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            238
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_str_replace",
+                    "flow_line": 14,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$str_replace_param2_line14_column238_progpilot",
+                    "flow_line": 14,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$target",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$_REQUEST[\"ip\"]",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+                }
+            ]
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 19,
+        "sink_column": 437,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "177bd78071c5979ece0a6667ccea575cd256b327e0fdd5c065c85bc1db4d444b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target"
+        ],
+        "source_line": [
+            14
+        ],
+        "source_column": [
+            238
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_str_replace",
+                    "flow_line": 14,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$str_replace_param2_line14_column238_progpilot",
+                    "flow_line": 14,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$target",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$_REQUEST[\"ip\"]",
+                    "flow_line": 5,
+                    "flow_column": 63,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php"
+                }
+            ]
+        ],
+        "sink_name": "shell_exec",
+        "sink_line": 23,
+        "sink_column": 505,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/exec\/source\/medium.php",
+        "vuln_name": "command_injection",
+        "vuln_cwe": "CWE_78",
+        "vuln_id": "177bd78071c5979ece0a6667ccea575cd256b327e0fdd5c065c85bc1db4d444b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file"
+        ],
+        "source_line": [
+            4
+        ],
+        "source_column": [
+            41
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/fi\/source\/low.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$_GET[\"page\"]",
+                    "flow_line": 4,
+                    "flow_column": 41,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/fi\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "include",
+        "sink_line": 36,
+        "sink_column": 893,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/fi\/index.php",
+        "vuln_name": "file_inclusion",
+        "vuln_cwe": "CWE_98",
+        "vuln_id": "b13bc808482fc3b6effc1b64ad0cb1a753fae7cc71947cae5a21ae155b354366",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            114
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/low.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$id",
+                    "flow_line": 5,
+                    "flow_column": 65,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_REQUEST[\"id\"]",
+                    "flow_line": 5,
+                    "flow_column": 65,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 192,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/low.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "95a17a010a5a94e26239ed3718b29eeaabcb935486927263be638089f876ea14",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            79
+        ],
+        "source_column": [
+            2307
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$html",
+                    "flow_line": 18,
+                    "flow_column": 623,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/low.php"
+                },
+                {
+                    "flow_name": "$id",
+                    "flow_line": 5,
+                    "flow_column": 65,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_REQUEST[\"id\"]",
+                    "flow_line": 5,
+                    "flow_column": 65,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 280,
+        "sink_column": 9269,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "ee6a8a68f4fbbb039c01841017607dbb8cd553a5888f68ad2bfc714888b7cdeb",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            603
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/session-input.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$page[\"body\"]",
+                    "flow_line": 15,
+                    "flow_column": 521,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/session-input.php"
+                },
+                {
+                    "flow_name": "$page[\"body\"]",
+                    "flow_line": 14,
+                    "flow_column": 447,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/session-input.php"
+                },
+                {
+                    "flow_name": "$_SESSION[\"id\"]",
+                    "flow_line": 12,
+                    "flow_column": 348,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/session-input.php"
+                },
+                {
+                    "flow_name": "$_POST[\"id\"]",
+                    "flow_line": 12,
+                    "flow_column": 348,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/session-input.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 386,
+        "sink_column": 11636,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "8c48e2243bcb8b8eb50746e2c617b3d5ec94fe22931b8d36e39971efb79c1d70",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$query"
+        ],
+        "source_line": [
+            9
+        ],
+        "source_column": [
+            158
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/medium.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$id",
+                    "flow_line": 7,
+                    "flow_column": 88,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$return_mysqli_real_escape_string",
+                    "flow_line": 7,
+                    "flow_column": 88,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$mysqli_real_escape_string_param1_line7_column88_progpilot",
+                    "flow_line": 7,
+                    "flow_column": 88,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$id",
+                    "flow_line": 5,
+                    "flow_column": 62,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$_POST[\"id\"]",
+                    "flow_line": 5,
+                    "flow_column": 62,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/medium.php"
+                }
+            ]
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 10,
+        "sink_column": 234,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli\/source\/medium.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "51b337cbb6894091dd400dc488a09205d6074d801ca5fccac67216e9b3877867",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$_POST[\"id\"]"
+        ],
+        "source_line": [
+            12
+        ],
+        "source_column": [
+            353
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/cookie-input.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "setcookie",
+        "sink_line": 12,
+        "sink_column": 353,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/cookie-input.php",
+        "vuln_name": "session_fixation",
+        "vuln_cwe": "CWE_384",
+        "vuln_id": "d9681b0f525a0149864b985bbb8f3577228092fc1e4fb32e05174197d1620c6b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$getid"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            106
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/source\/low.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$id",
+                    "flow_line": 5,
+                    "flow_column": 61,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_GET[\"id\"]",
+                    "flow_line": 5,
+                    "flow_column": 61,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 184,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/source\/low.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "969a094af20baa1d10ab2415bd7c05634d7e2638b7a6d0fa8789010a022deb7b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$getid"
+        ],
+        "source_line": [
+            8
+        ],
+        "source_column": [
+            108
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/source\/high.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$id",
+                    "flow_line": 5,
+                    "flow_column": 60,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/source\/high.php"
+                },
+                {
+                    "flow_name": "$_COOKIE[\"id\"]",
+                    "flow_line": 5,
+                    "flow_column": 60,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/source\/high.php"
+                }
+            ]
+        ],
+        "sink_name": "mysqli_query",
+        "sink_line": 9,
+        "sink_column": 194,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/sqli_blind\/source\/high.php",
+        "vuln_name": "sql_injection",
+        "vuln_cwe": "CWE_89",
+        "vuln_id": "677b44d4ae5f52db017be23b90b0c76c4bde7f58fb9ac2c8a474a37d6729c7a9",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target_path"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            152
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_basename",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+                },
+                {
+                    "flow_name": "$basename_param0_line6_column152_progpilot",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_FILES[\"uploaded\"][\"name\"]",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "move_uploaded_file",
+        "sink_line": 9,
+        "sink_column": 270,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "186eeccea3b0016aad14838a0c2909c48636b9f75ba422b4080b57850f041ab8",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            61
+        ],
+        "source_column": [
+            1842
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$html",
+                    "flow_line": 15,
+                    "flow_column": 437,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+                },
+                {
+                    "flow_name": "$target_path",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+                },
+                {
+                    "flow_name": "$return_basename",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+                },
+                {
+                    "flow_name": "$basename_param0_line6_column152_progpilot",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_FILES[\"uploaded\"][\"name\"]",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 280,
+        "sink_column": 9269,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0083b09039c072c479647280e85e33fb3fa75d8f35f502863194f71c09a9a89a",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target_path"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            152
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/high.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_basename",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/high.php"
+                },
+                {
+                    "flow_name": "$basename_param0_line6_column152_progpilot",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/high.php"
+                },
+                {
+                    "flow_name": "$_FILES[\"uploaded\"][\"name\"]",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/high.php"
+                }
+            ]
+        ],
+        "sink_name": "move_uploaded_file",
+        "sink_line": 20,
+        "sink_column": 761,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/high.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "55ef3de98d2632f849c501a0986f33e63a1456b4797b1e4052758366346f4490",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$temp_file"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            859
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$uploaded_ext",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$return_substr",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$substr_param0_line10_column238_progpilot",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$uploaded_name",
+                    "flow_line": 9,
+                    "flow_column": 186,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$_FILES[\"uploaded\"][\"name\"]",
+                    "flow_line": 9,
+                    "flow_column": 186,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                }
+            ]
+        ],
+        "sink_name": "rename",
+        "sink_line": 40,
+        "sink_column": 1688,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "8a889d13e5b1f2530438a0b1efbf1e6c015383d44ec544de7c8cc4f702653f8e",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target_file"
+        ],
+        "source_line": [
+            18
+        ],
+        "source_column": [
+            662
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$uploaded_ext",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$return_substr",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$substr_param0_line10_column238_progpilot",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$uploaded_name",
+                    "flow_line": 9,
+                    "flow_column": 186,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$_FILES[\"uploaded\"][\"name\"]",
+                    "flow_line": 9,
+                    "flow_column": 186,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                }
+            ]
+        ],
+        "sink_name": "rename",
+        "sink_line": 40,
+        "sink_column": 1688,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "eb20e788e13de8aca6e446d8a9b32692a347a1c4db542960fa5f16ddadc80888",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$temp_file"
+        ],
+        "source_line": [
+            20
+        ],
+        "source_column": [
+            859
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$uploaded_ext",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$return_substr",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$substr_param0_line10_column238_progpilot",
+                    "flow_line": 10,
+                    "flow_column": 238,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$uploaded_name",
+                    "flow_line": 9,
+                    "flow_column": 186,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                },
+                {
+                    "flow_name": "$_FILES[\"uploaded\"][\"name\"]",
+                    "flow_line": 9,
+                    "flow_column": 186,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php"
+                }
+            ]
+        ],
+        "sink_name": "unlink",
+        "sink_line": 51,
+        "sink_column": 2053,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/impossible.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "c23315e0dcdc2b7ec06cd041eccfe10c816997cade755056c6ed6afe57f6c15f",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$target_path"
+        ],
+        "source_line": [
+            6
+        ],
+        "source_column": [
+            152
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/medium.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$return_basename",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$basename_param0_line6_column152_progpilot",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/medium.php"
+                },
+                {
+                    "flow_name": "$_FILES[\"uploaded\"][\"name\"]",
+                    "flow_line": 6,
+                    "flow_column": 152,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/medium.php"
+                }
+            ]
+        ],
+        "sink_name": "move_uploaded_file",
+        "sink_line": 18,
+        "sink_column": 587,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/upload\/source\/medium.php",
+        "vuln_name": "idor",
+        "vuln_cwe": "CWE_862",
+        "vuln_id": "f91aa2e94114e4be76a87361cffea5d74fb670ab16e27558ee0b508691286149",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$file_get_contents_return"
+        ],
+        "source_line": [
+            15
+        ],
+        "source_column": [
+            365
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/view_help.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "eval",
+        "sink_line": 15,
+        "sink_column": 365,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/view_help.php",
+        "vuln_name": "eval code_injection",
+        "vuln_cwe": "CWE_95",
+        "vuln_id": "1196b6c35cc5aafaad21af25d6754bac84e72c5778f7787f32f21be6837942f7",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            71
+        ],
+        "source_column": [
+            1727
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/view_source.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$id",
+                    "flow_line": 11,
+                    "flow_column": 291,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/view_source.php"
+                },
+                {
+                    "flow_name": "$_GET[\"id\"]",
+                    "flow_line": 11,
+                    "flow_column": 291,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/view_source.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 386,
+        "sink_column": 11636,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "3e71d44e13949722570a2ee292fcf6fa7cce13a7c4b1f002b3b6ab7045337d4d",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            67
+        ],
+        "source_column": [
+            1715
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/view_source_all.php"
+        ],
+        "tainted_flow": [
+            []
+        ],
+        "sink_name": "echo",
+        "sink_line": 386,
+        "sink_column": 11636,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1ac96c039a04b6d3debde9bedcb20c8ce65745a9a171999493389585506a0c3b",
+        "vuln_type": "taint-style"
+    },
+    {
+        "vuln_rule": "MUST_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 11,
+        "vuln_column": 265,
+        "vuln_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/weak_id\/source\/high.php",
+        "vuln_description": "cookie set without httponly flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "a753cff535898ef7848f6df456c5315c206da54527c2743b10bf2e5d1437acb7",
+        "vuln_type": "custom"
+    },
+    {
+        "vuln_rule": "MUST_VERIFY_DEFINITION",
+        "vuln_name": "security misconfiguration",
+        "vuln_line": 11,
+        "vuln_column": 265,
+        "vuln_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/weak_id\/source\/high.php",
+        "vuln_description": "cookie set without secure flag",
+        "vuln_cwe": "CWE_1004",
+        "vuln_id": "a753cff535898ef7848f6df456c5315c206da54527c2743b10bf2e5d1437acb7",
+        "vuln_type": "custom"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            49
+        ],
+        "source_column": [
+            1309
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/xss_r\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$html",
+                    "flow_line": 8,
+                    "flow_column": 166,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/xss_r\/source\/low.php"
+                },
+                {
+                    "flow_name": "$_GET[\"name\"]",
+                    "flow_line": 8,
+                    "flow_column": 166,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/xss_r\/source\/low.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 280,
+        "sink_column": 9269,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "1516010ba64b6338755c355fe7f6a8678e9f0c59e68798dd392975f7e027e9fa",
+        "vuln_type": "taint-style"
+    },
+    {
+        "source_name": [
+            "$page[\"body\"]"
+        ],
+        "source_line": [
+            66
+        ],
+        "source_column": [
+            2224
+        ],
+        "source_file": [
+            "\/home\/labs\/static-analysis\/testcase\/dvwa\/vulnerabilities\/xss_s\/index.php"
+        ],
+        "tainted_flow": [
+            [
+                {
+                    "flow_name": "$dvwaGuestbook_return",
+                    "flow_line": 518,
+                    "flow_column": 15733,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php"
+                },
+                {
+                    "flow_name": "$guestbook",
+                    "flow_line": 516,
+                    "flow_column": 15621,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php"
+                },
+                {
+                    "flow_name": "$name",
+                    "flow_line": 512,
+                    "flow_column": 15567,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php"
+                },
+                {
+                    "flow_name": "$row[0]",
+                    "flow_line": 512,
+                    "flow_column": 15567,
+                    "flow_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php"
+                }
+            ]
+        ],
+        "sink_name": "echo",
+        "sink_line": 280,
+        "sink_column": 9269,
+        "sink_file": "\/home\/labs\/static-analysis\/testcase\/dvwa\/dvwa\/includes\/dvwaPage.inc.php",
+        "vuln_name": "xss",
+        "vuln_cwe": "CWE_79",
+        "vuln_id": "0923b75993a40e97defa90b7b387995a56e179f38f65d6d396660dec47bf0cb8",
+        "vuln_type": "taint-style"
+    }
+]
